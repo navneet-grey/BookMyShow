@@ -1,0 +1,18 @@
+<div class="blank-page2">
+  <img src="assets/images/check.png" alt="" width="100px">
+  <h1 class="text-danger">Your booking is confirmed</h1> 
+
+  <h5 class="text-danger">Thank You for Your time</h5>
+
+  <div class="bill-btn py-3">
+    <div class="btn-danger btn" (click)="generateUniqueId()">
+     Check you Unique id:
+    </div>
+    <div *ngIf="uniqueId" class="unique-id">
+      Your id: {{ uniqueId }}
+    </div>
+  </div>
+ </div>
+
+ <!-- <button (click)="generateUniqueId()">Generate Unique ID</button> -->
+

@@ -1,0 +1,173 @@
+
+
+
+*{
+    box-sizing:border-box ;
+}
+
+
+.body{
+    background-color: rgb(24, 24, 59) ;
+    display:flex ;
+    flex-direction:column ;
+    color:white ;
+    align-items: center ;
+    justify-content: center ;
+    height:100vh ;
+}
+
+.seat{
+    background-color:#f1f1f1;
+    height:12px ;
+    width:15px ;
+    margin:3px ;
+    /* border-top-left-radius: 10px ; */
+    /* border-top-right-radius: 10px ; */
+    border-radius: 3px ;
+}
+
+.row{
+    display: flex ;
+
+}
+
+.movie-container {
+    margin:20px 0 ;
+}
+.movie-container .sss{
+    background-color:#ffffff;
+    border:0 ;
+    border-radius:5px ;
+    font-size:14px ;
+    margin-left: 10px ;
+    padding: 5px 15px 5px 15px ;
+    /* -moz-appearance: none ;
+    -webkit-appearance: none ;
+    appearance: none ; */
+
+}
+
+
+.seat.selected{
+    background-color: skyblue ;
+}
+
+.seat.occupied{
+    background-color: white ;
+}
+
+
+
+/* This syntax give the blank column margin to 3rd column */
+.seat:nth-of-type(2){
+    margin-right: 18px ;
+}
+
+
+
+/* This syntax give the blank column margin to last 8th column */
+.seat:nth-last-of-type(2){
+    margin-left:18px ;
+}
+
+
+/* This syntax only apply on seat class which not occupied */
+.seat:not(.occupied):hover{
+    cursor: pointer ;
+    transform: scale(1,1.19) ;
+
+}
+
+
+/* This syntax apply on showcase class it stop the hover effect which come from the upper syntax */
+.showcase .seat:not(.occupied):hover{
+    cursor: default ;     
+    transform: scale(1) ;
+}
+
+.showcase{
+    background-color:  rgb(29, 29, 78) ;
+    padding:5px 10px ;
+    border-radius: 5px ;
+    color:grey ;
+    list-style-type: none ;
+    display: flex ;
+    justify-content: space-between ;
+}
+
+.showcase li{
+    display:flex ;
+    align-items: center ;
+    justify-content: center ;
+    margin:0px 10px ;
+}
+
+.showcase li small{
+    margin-left:10px ;
+}
+
+.screen{
+    background-color: white ;
+    height: 135px ;
+    width:100% ;
+    margin: 15px 0px ;
+    transform: rotateX(-45deg) ;
+    box-shadow: 0px 3px 10px whitesmoke ;
+}
+
+
+.container{
+    /* Making item look like 3D */
+    perspective: 1000px ;   
+    margin-bottom:30px ;
+}
+
+p.text{
+    margin:5px 0px ;
+}
+
+p.text span{
+    color:#31ff00 ;
+}
+.text-danger{
+    color: aqua !important;
+}
+
+/* seatbooking.component.css */
+
+/* Add these styles to your existing CSS file */
+
+.na-seat {
+    background-color: #747070 !important; /* Change to the desired color for N/A seats */
+  }
+  
+  .occupied-seat {
+    background-color: #32f098 !important; /* Change to the desired color for occupied seats */
+  }
+
+
+  /* seatbooking.component.css */
+
+.na-seat {
+    background-color: #747070; /* Change to the desired color for N/A seats */
+    cursor: not-allowed; /* Optional: Change cursor to indicate not selectable */
+    /* Add any additional styles for N/A seats */
+  }
+  
+  .occupied-seat {
+    background-color: #32f098; /* Change to the desired color for occupied seats */
+    /* Add any additional styles for occupied seats */
+  }
+  
+  
+
+  
+.blank-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999; /* Ensure it overlays other content */
+  }

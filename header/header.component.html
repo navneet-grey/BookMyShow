@@ -1,0 +1,492 @@
+  <!-- modal  -->
+
+  <div id="myModal" [style.display]="modalVisible ? 'block' : 'none'" (click)="onWindowClick($event)" class="modal">
+    <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <div class="current-location">
+            <a href="" class="d-flex">
+                <i class="fa-solid fa-location-crosshairs text-danger mt-1"></i>
+                <h6 class="text-danger px-2">{{ dynamicTitle }}</h6>
+            </a>
+        </div>
+        <div class="popular-cities">
+            <p class="text-center">Popular cities</p>
+            <div class="cities d-flex justify-content-between names">
+                <div class="city1 d-flex flex-column text-dark" (click)="changeTitle('Mumbai')"><img src="assets/images/mumbai.png" alt=""
+                        width="60px" />Mumbai</div>
+                <div class="city2 d-flex flex-column text-dark" (click)="changeTitle('Delhi-NCR')"><img src="assets/images/ncr-selected.png" alt=""
+                        width="60px" />Delhi-NCR</div>
+                <div class="city3 d-flex flex-column text-dark" (click)="changeTitle('Bangaluru')"><img src="assets/images/bang.png" alt=""
+                        width="60px" />Bengaluru</div>
+                <div class="city4 d-flex flex-column text-dark" (click)="changeTitle('Hyderabad')"><img src="assets/images/hyd.png" alt=""
+                        width="60px" />Hyderabad</div>
+                <div class="city5 d-flex flex-column text-dark" (click)="changeTitle('Ahmedabad')"><img src="assets/images/ahd.webp" alt=""
+                        width="60px" />Ahmedabad</div>
+                <div class="city6 d-flex flex-column text-dark" (click)="changeTitle('Chandigarh')"><img src="assets/images/chd.webp" alt=""
+                        width="60px" />Chandigarh</div>
+                <div class="city7 d-flex flex-column text-dark" (click)="changeTitle('Chennai')"><img src="assets/images/chen.webp" alt=""
+                        width="60px" />Chennai</div>
+                <div class="city8 d-flex flex-column text-dark" (click)="changeTitle('Pune')"><img src="assets/images/pune.png" alt=""
+                        width="60px" />Pune</div>
+                <div class="city9 d-flex flex-column text-dark" (click)="changeTitle('Kolkata')"><img src="assets/images/kolk (1).webp" alt=""
+                        width="60px" />Kolkata</div>
+                <div class="city10 d-flex flex-column text-dark" (click)="changeTitle('Kochi')"><img src="assets/images/koch.webp" alt=""
+                        width="60px" />Kochi</div>
+            </div>
+            <div class="more-cities">
+                <div class="all-cities text-center">
+                    <p class="d-inline-flex gap-1 text-center">
+                        <a class="text-danger" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            View all cities
+                        </a>
+                    </p>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="other-cities">
+                            <div class="text-center pb-4 fw-bold">Other Cities</div>
+                            <div class="d-flex justify-content-between cities-ul">
+                            <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aalo</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Abohar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Abu Road</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Achampet</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Acharapakkam</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Addanki</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Adilabad</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Adimali</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Adipur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Adoni</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Agar Malwa</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Agartala</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Agiripalli</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Agra</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ahmedgarh</div>
+                                </li>
+                            </ul>
+                            <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ahmednagar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ahore</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aizawl</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ajmer</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akaltara</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akbarpur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akividu</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akluj</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akola</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Akot</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alakode</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alangudi</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alangulam</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alappuzha</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alathur</div>
+                                </li>
+                                </ul>
+                                <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alibaug</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aligarh</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alipurduar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Almora</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">
+                                        Alsisar (Rajasthan)
+                                    </div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Alwar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amadalavalasa</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amalapuram</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amalner</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amangal</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amaravathi</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ambajogai</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ambala</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ambikapur</div>
+                                </li>
+                                </ul>
+                                <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ambur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amgaon</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amravati</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amreli</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amritsar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Amroha</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anaikatti</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anakapalle</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anand</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anandapur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anantapalli</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anantapur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anaparthi</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anchal</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">
+                                        Andaman And Nicobar
+                                    </div>
+                                </li>
+                                </ul>
+                                <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anekal</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Angadipuram</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Angamaly</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Angara</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Angul</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anjad</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anjar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anklav</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ankleshwar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ankola</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Annavaram</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Annigeri</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Anthiyur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Apra</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arakkonam</div>
+                                </li>
+                                </ul>
+                                <ul class="other-cities-ul">
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arambagh</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arambol</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aranthangi</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aravakurichi</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ariyalur</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arkalgud</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Armoor</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arni</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Arsikere</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Aruppukottai</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Asansol</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">Ashoknagar</div>
+                                </li>
+                                <li class="other-cities-list">
+                                    <div class="other-cities-name">
+                                        Ashoknagar (West Bengal)
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar fixed-top nav-bg">
+    <div class="nav-container">
+        <a class="navbar-brand mx-0" href="/index.html">
+            <div class="c-name">
+                <h3 class="mt-2">Book</h3>
+                <h4 class="mt-2">Show</h4>
+                <h3 class="mt-2">Tickets</h3>
+                <div class="logo px-4">
+                    <img src="assets/images/movie-ticket.png" alt="BookingShowTicket" width="47px" />
+                </div>
+            </div>
+        </a>
+
+        <!-- <div class="location-logo">
+            <li class="nav-item d-flex align-items-center px-3">
+                <a class="nav-link text-dark d-flex" id="openModalBtn" href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            </li>
+        </div> -->
+        
+        
+        <div class="d-flex">
+            
+            <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex flex-row nav-ul-2">
+                <li class="nav-item d-flex align-items-center px-3" (click)="openModal()" id="openModalBtn">
+                    <a class="nav-link text-dark d-flex d-lg-none location-1"  href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+                    <a class="nav-link text-white d-lg-flex d-none mt-2 pb-0 location-2"   href="#"><p id="dynamicTitle">{{ dynamicTitle }} </p><i
+                            class="fa-solid fa-sort-down ps-2"></i></a>
+                </li>
+                <li class="nav-item px-3 d-lg-flex d-none">
+                    <!-- <a class="nav-link text-white" (click)="onidsearch()"><div class="btn btn-danger">Sign in</div> </a> -->
+                </li>
+            </ul>
+            
+            <button class="navbar-toggler border border-0 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header menu-head text-white ">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hey!</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0 py-2">
+          <ul class="navbar-nav justify-content-end flex-grow-1 ">
+              <li class="nav-item gift-box-shadow px-3">
+                <a class="nav-link d-flex" href="#">
+                    <div class="d-flex">
+                        <div class="mt-1">
+                        <img src="assets/images/gift-box.webp" alt="rewards" class="logo" width="37px">
+                    </div>
+                    <div class="gift-para px-2">Unlock special offers &amp; great benefits</div>
+                </div>
+                <a class="login-reg">
+                    <div class="btn btn-outline-danger log-res-btn" >Login / Register</div>
+            </a>
+                     </a>
+              </li>
+              
+            <li class="nav-item px-4 fs-15px mt-3" >
+              <a class="nav-link d-flex" href="#"><i class="fa-regular fa-bell mt-1 fs-20px"></i> <h6 class="px-2">Notification </h6> </a>
+            </li>
+            <hr class="my-1">
+            <li class="nav-item px-4">
+              <a class="nav-link d-flex pb-0" href="#"><i class="fa-solid fa-store mt-1 fs-20px"></i> 
+                <div class="help-support px-2">
+                <h6 class="mb-0">Your Orders</h6>
+                <p class="fs-13px">View all your bookings & purchases</p>
+              </div> </a>
+            </li>
+            <hr class="my-1">
+            <li class="nav-item px-4">
+              <a class="nav-link d-flex pb-0" href="#"><i class="fa-regular fa-comments mt-1 fs-20px"></i> 
+                <div class="help-support px-2">
+                <h6 class="mb-0">Help & Support</h6>
+                <p class="fs-13px">View your Play Credit Card details and offers</p>
+              </div> </a>
+            </li>
+            <hr class="my-1">
+            <li class="nav-item px-4">
+              <a class="nav-link d-flex pb-0" href="#"><i class="fa-solid fa-gear mt-1 fs-20px"></i>
+                <div class="help-support px-2">
+                <h6 class="mb-0">Accounts & Settings</h6>
+                <p class="fs-13px">Location, Payments, Permissions & More</p>
+              </div> </a>
+            </li>
+            <hr class="my-1">
+            <li class="nav-item px-4">
+              <a class="nav-link d-flex pb-0" href="#"><i class="fa-solid fa-gift mt-1 fs-20px"></i>
+                <div class="help-support px-2">
+                <h6 class="mb-0">Rewards</h6>
+                <p class="fs-13px">View your rewards & unlock new ones</p>
+              </div> </a>
+            </li>
+            <hr class="my-1">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            <!-- </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- header start  -->
+<nav class="navbar navbar-expand-lg nav-bg">
+    <div class="nav-container">
+        <a class="navbar-brand mx-0" href="#">
+            <div class="c-name">
+                <h2 class="mt-2">Book</h2>
+                <h3 class="mt-2">Show</h3>
+                <h2 class="mt-2">Tickets</h2>
+                <div class="logo px-4">
+                    <img src="assets/images/movie-ticket.png" alt="BookingShowTicket" width="47px" />
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item logo2">
+                    <a class="nav-link" href="#"><img src="assets/images/movie-ticket.png" alt="BookingShowTicket"
+                            width="47px" /></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center px-3">
+                    <a class="nav-link text-white d-flex" (click)="openModal()" id="openModalBtn" href="#">Delhi-NCR<i
+                            class="fa-solid fa-sort-down ps-2"></i></a>
+                </li>
+                <li class="nav-item px-3">
+                    <!-- <a class="nav-link text-white" href="#"><div class="btn btn-danger">Sign in</div> </a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

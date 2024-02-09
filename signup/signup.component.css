@@ -1,0 +1,33 @@
+.orange-text{
+    color: #ff503e !important;
+}
+.orange-btn{
+    background-color: #ff503e !important;
+    width: 100%;
+    border-radius: 22px !important;
+}
+
+.logIn-box{
+    border-radius: 10px;
+    padding: 30px 30px;
+    border: 1px solid #e5e7eb;
+    margin: 0px 130px;
+    
+}
+.email-input{
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    padding: 7px 5px;
+    width: 100%;
+}
+.login-padding{
+    padding: 126px 0px;
+}
+
+/* ------  */
+@media only screen and (max-width:991px){
+    .logIn-box {
+        margin: 0px 20px;
+    }
+}
+

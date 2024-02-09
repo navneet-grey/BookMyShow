@@ -1,0 +1,733 @@
+<!-- <app-header></app-header> -->
+
+<!-- index section 1  -->
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/images/background.jpg.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/background3.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/background4.webp" class="d-block w-100" alt="..." />
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- index section 2  -->
+<div class="index-section-2">
+    <div class="is-2-container">
+        <div class="col-md-12">
+            <div class="rrow">
+                <section class="product">
+                    <h2 class="product-category">Recommended Movies</h2>
+                    <div  *ngFor="let container of productContainers" class="product-container" #productContainer>
+                    <button title="btn" class="pre-btn" #preBtn (click)="scrollContainer(container, 'left')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                    <button title="btn" class="nxt-btn" #nxtBtn (click)="scrollContainer(container, 'right')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                </div>
+                    <div class="product-container">
+                        <div class="product-card">
+                            <div (click)="onmovie6()">
+                            <div class="product-image">
+                                <img src="assets/images/jawan.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Jawan</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie4()">
+                            <div class="product-image">
+                                <img src="assets/images/dreamgirl2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Dream Girl 2</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie3()">
+                            <div class="product-image">
+                                <img src="assets/images/thecreator.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">The Creator</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie8()">
+                            <div class="product-image">
+                                <img src="assets/images/nun2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">The Nun II</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie11()">
+                            <div class="product-image">
+                                <img src="assets/images/vaccinewar.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">The Vaccine War</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie5()">
+                            <div class="product-image">
+                                <img src="assets/images/fukry3.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Fukrey 2</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie1()">
+                            <div class="product-image">
+                                <img src="assets/images/chandramukhi2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Chandramukhi 2</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie10()">
+                            <div class="product-image">
+                                <img src="assets/images/rm5.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Tu Jhoothi Main Makkaar</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div (click)="onbheed()">
+                                    <img src="assets/images/rm1.webp" class="product-thumb" alt="" /></div>
+                            </div>
+                            <div class="product-info">
+                                <div (click)="onbheed()">
+                                    <h5 class="product-brand">Bheed</h5>
+                                </div>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        a short line about the cloth..
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie7()">
+                            <div class="product-image">
+                                <img src="assets/images/rm2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">John Wick: Chapter 4</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie9()">
+                            <div class="product-image">
+                                <img src="assets/images/rm3.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Shazam! Fury of the Gods</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div (click)="onmovie2()">
+                            <div class="product-image">
+                                <img src="assets/images/rm4.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand">Mrs.Chatterjee Vs Norway</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 3  -->
+<div class="index-section-3">
+    <div class="is-3-container">
+        <div class="col-md-12">
+            <div class="is-3-bg">
+                <img src="assets/images/stream-leadin-web-collection.webp" alt="" width="100%" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 4  -->
+<div class="index-section-4">
+    <div class="is-4-container">
+        <div class="col-md-12">
+            <div class="is-4-title px-4 py-2">
+                <h4>The Best Of Live Events</h4>
+            </div>
+            <div class="rrow">
+                <div class="is-4-cards d-flex justify-content-between">
+                    <div class="is-4-card-img text-center py-lg-0 py-2">
+                        <a href="">
+                            <img src="assets/images/workshop.webp" class="is-4-img" alt="" width="80%" /></a>
+                    </div>
+                    <div class="is-4-card-img text-center py-lg-0 py-2">
+                        <a href="">
+                            <img src="assets/images/kids-zone.webp" class="is-4-img" alt="" width="80%" /></a>
+                    </div>
+                    <div class="is-4-card-img text-center py-lg-0 py-2">
+                        <a href="">
+                            <img src="assets/images/comadyshow.webp" class="is-4-img" alt="" width="80%" /></a>
+                    </div>
+                    <div class="is-4-card-img text-center py-lg-0 py-2">
+                        <a href="">
+                            <img src="assets/images/musicshow.webp" class="is-4-img" alt="" width="80%" /></a>
+                    </div>
+                    <div class="is-4-card-img text-center py-lg-0 py-2">
+                        <a href="">
+                            <img src="assets/images/esport.webp" class="is-4-img" alt="" width="80%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 5  -->
+<div class="index-section-5">
+    <div class="is-5-container">
+        <div class="col-md-12">
+            <div class="is-5-title px-5">
+                <img src="assets/images/is-5-img.webp" alt="" width="100%" />
+            </div>
+            <div class="rrow">
+                <section class="product">
+                    <h2 class="product-category text-white">Recommended Movies</h2>
+                    <div  *ngFor="let container of productContainers" class="product-container" #productContainer>
+                    <button title="btn" class="pre-btn" #preBtn (click)="scrollContainer(container, 'left')" style="background: transparent">
+                        <img src="assets/images/arrrow.png" alt="" style="
+                background: white;
+                padding: 7px 12px;
+                border-radius: 50%;
+              " />
+                    </button>
+                    <button title="btn" class="nxt-btn" #nxtBtn (click)="scrollContainer(container, 'right')" style="background: transparent">
+                        <img src="assets/images/arrrow.png" alt="" style="
+                background: white;
+                padding: 7px 12px;
+                border-radius: 50%;
+              " />
+                    </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img1.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">Mending the Line</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">Blue Beetle</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img3.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">
+                                    Happy Valley Series 3
+                                </h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img4.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">
+                                    Are You There God? Its Me, Margaret
+                                </h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img5.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">King Lear</h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img6.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">
+                                    Scooby-Doo and Krypto Too
+                                </h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-5-img7.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <h5 class="product-brand text-white">
+                                    Scooby-Doo and Krypto Too
+                                </h5>
+                                <p class="product-short-description fs-13px">
+                                    a short line about the cloth..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 6  -->
+<div class="index-section-6">
+    <div class="is-6-container">
+        <div class="col-md-12">
+            <div class="rrow">
+                <section class="product">
+                    <div class="is-6-title d-flex product-category">
+                        <h4 class="px-2">Outdoor Events</h4>
+                        <img src="assets/images/new.png" alt="" width="33px" />
+                    </div>
+                    <div  *ngFor="let container of productContainers" class="product-container" #productContainer>
+                    <button title="btn" class="pre-btn" #preBtn (click)="scrollContainer(container, 'left')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                    <button title="btn" class="nxt-btn" #nxtBtn (click)="scrollContainer(container, 'right')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        KING New Life India Tour By TI LIVE- (Delhi NCR)
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Backyard Sports Club: Gurugram
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Euphoria - India Tour - Gurgaon
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Venue To Be Announced: Gurugram
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-3.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">A Nostalgic Christmas</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Kamani Auditorium: Delhi
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-4.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Sunburn Arena Ft. Black Coffee (Delhi NCR)
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        DLF Surface Parking 5: Gurugram
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-5.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">Ed Sheeran: +–=÷× Tour</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Mahalaxmi Race Course: Mumbai
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-6.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">Sunburn Goa 2023</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Vagator: Goa
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-7.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">DWAPAR NAAD</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Kamani Auditorium: Delhi
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-6-img-8.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Bandland feat. Deep Purple, Goo Goo Dolls
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Embassy International Riding School: Bengaluru
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 7  -->
+<div class="index-section-7">
+    <div class="is-7-container">
+        <div class="col-md-12">
+            <div class="rrow">
+                <section class="product">
+                    <div class="is-7-title d-flex product-category">
+                        <h4 class="px-2">Top Games & Sport Events</h4>
+                        <img src="assets/images/new.png" alt="" width="33px" />
+                    </div>
+                    <div  *ngFor="let container of productContainers" class="product-container" #productContainer>
+                    <button title="btn" class="pre-btn" #preBtn (click)="scrollContainer(container, 'left')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                    <button title="btn" class="nxt-btn" #nxtBtn (click)="scrollContainer(container, 'right')" style="background: #f0f0f0">
+                        <img src="assets/images/arrrow.png" alt="" />
+                    </button>
+                    </div>
+                    <div class="product-container pb-5">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        All India Sudoku Championship (AISC) - Winter 2023
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Watch on Zoom.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-2.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">Soul Shot Firing Range</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Soul Shot Firing Range: Delhi
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-3.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        21 Days Walking Challenge (New Year Special) by MALSAR
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Watch on Zoom.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-4.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Monthly Sudoku Challenge by MALSAR
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Watch on Zoom.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-5.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">KAILASH MARATHON</h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        The Great India Place: Noida
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-6.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Shinrin~Yoku: The Art of Forest Bathing
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Jahanpanah Forest: New Delhi
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-8.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Samurai Sudoku Championship by Malsar
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Watch on Zoom.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/is-7-img-9.webp" class="product-thumb" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5 class="product-brand">
+                                        Fitness Virtual Marathon 2024
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <p class="product-short-description fs-13px">
+                                        Your Place and Your Time: India
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- index section 8 -->
+
+<!-- index section 7  -->
+<div class="index-section-8">
+    <div class="is-8-container">
+        <div class="col-md-12">
+            <div class="row">
+                <h4 class="px-2">Top Games & Sport Events</h4>
+                <div class="trending-box">
+                    <div class="d-flex flex-wrap">
+                        <div class="trending-card">
+                            <h6 class="text-danger">A Nostalgic Christmas</h6>
+                            <p>Events</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">Shazam! Fury of the Gods</h6>
+                            <p>Movies</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">Mrs.Chatterjee Vs Norway</h6>
+                            <p>Movies</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">Soul Shot Firing Range</h6>
+                            <p>Sports</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">DWAPAR NAAD</h6>
+                            <p>Events</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">Sunburn Goa 2023</h6>
+                            <p>Events</p>
+                        </div>
+                        <div class="trending-card">
+                            <h6 class="text-danger">Blue Beetle</h6>
+                            <p>Movies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <app-footer></app-footer> -->
