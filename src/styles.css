@@ -1,0 +1,609 @@
+/* You can add global styles to this file, and also import other style files */
+/* css reset  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Ysabeau Office', sans-serif !important; */
+    overflow-x: hidden;
+    background: #f0f0f0 !important;
+}
+li{
+  list-style-type: none;
+}
+/* global css  */
+a{
+    text-decoration: none !important;
+}
+.fs-14px{
+  font-size: 14px !important;
+}
+.fs-13px{
+  font-size: 13px !important;
+}
+.fs-12px{
+  font-size: 12px !important;
+}
+.fs-20px{
+  font-size: 20px !important;
+}
+.fs-8px{
+  font-size: 8px !important;
+}
+.fs-10px{
+    font-size: 10px;
+    color: #717171;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80% !important;
+}
+
+.close {
+  color: #aaa;
+  display: none;
+  justify-content: end;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.more-cities{
+  padding: 40px 0px 0px
+}
+
+.other-cities-name{
+  cursor: pointer;
+}
+
+
+
+/* header css  */
+nav{
+    font-family: 'Roboto Serif', serif !important;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    /* border: none !important; */
+    box-shadow: none !important;
+
+}
+.nav-container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    margin:0px 120px;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-bg{
+    background: #656565;
+}
+.c-name{
+    display: flex;
+    font-size: 22px;
+}
+.c-name h4 {
+    color: rgb(231, 49, 49);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #f00 !important;
+}
+
+.menu-head{
+  background-color: rgb(46, 49, 71);
+}
+.gift-logo {
+  background: gray;
+  padding: 6px 10px;
+  height: 38px;
+  color: red;
+  border-radius: 50%;
+}
+.gift-para{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-res-btn{
+    padding: 4px 3px !important;
+    font-size: 13px !important;
+    width: 106px;
+}
+.gift-box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+}
+
+/* index section 2  */
+
+.index-section-2{
+    padding: 30px 0px 0px;
+}
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+  }
+  
+  .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand {
+    /* text-transform: uppercase; */
+    color: black;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    color: grey;
+    font-size: 11px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.7;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+  
+/* index section 3  */
+.index-section-3{
+    padding: 60px 120px;
+}
+/* index section 3  */
+.index-section-4{
+    padding: 20px 130px;
+}
+.is-4-img{
+    border-radius: 12px;
+}
+/* index section 5  */
+.index-section-5{
+    padding: 100px 0px 50px;
+}
+.is-5-container {
+    background-color: rgb(43, 49, 72);
+}
+.is-5-pre-btn, .is-5-nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none !important;
+    cursor: pointer;
+    z-index: 8;
+}
+.is-5-btn-img{
+    filter: brightness(5);
+}
+.product-containers {
+  padding: 0px ;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.product-containers::-webkit-scrollbar {
+  display: none;
+}
+
+/* index section 7  */
+
+.index-section-7{
+  padding: 60px 0px;
+}
+.is-8-container{
+  margin: 0px 170px;
+}
+.trending-card{
+    background: white;
+    padding: 20px 12px 0px 12px;
+    border-radius: 12px;
+    margin-right: 18px;
+    margin-top: 19px;
+}
+
+/* footer  */
+
+.footer{
+  padding: 100px 0px 0px;
+}
+.footer-floor-1{
+  background: rgb(49, 48, 53);
+  padding: 20px 0px 5px;
+}
+.footer-floor-2{
+  background: rgb(64, 64, 67);
+  padding: 11px 0px 3px;
+}
+.footer-i{
+  font-size: 34px;
+  padding-bottom: 12px;
+}
+.footer-floor-3{
+  background: rgb(51, 51, 56);
+  padding:30px 94px;
+}
+.footer-floor-3-para{
+  color: rgb(165, 165, 165) !important;
+}
+.footer-list li{
+  border-right: 1px solid rgb(127, 127, 127);
+  padding: 0px 9px;
+}
+.footer-list li a{
+  color: gray !important;
+}
+.footer-list{
+  font-size: 11px;
+}
+.fs-list{
+  font-size: 14px;
+}
+.footer-line {
+  flex: 1 1 0%;
+  height: 1px;
+  background: rgb(93, 93, 95);
+}
+.footer-logo {
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 125px;
+}
+
+.social-media-logo {
+  background: rgb(93, 93, 95);
+  padding: 4px 9px;
+  border-radius: 50%;
+}
+.copy-right-para {
+  padding:30px;
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+  text-align: center;
+}
+
+
+/* ------------------------------------------------movies-info------------------------------------------------- */
+
+.movie-info{
+  padding: 100px 0px;
+  background: rgb(26, 26, 26);
+}
+
+/* ------------------------------------------------Theater------------------------------------------------- */
+
+.movie-type{
+  background: rgb(42, 42, 68);
+  padding: 40px 30px 70px;
+}
+.theater-logo-bg{
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 17px;
+    font-size: 17px;
+}
+.btndate a{
+  color: rgb(26, 26, 26);
+}
+
+.btn-date-color:focus{
+background-color: #ff7d7d !important;
+}
+.btn-date-color{
+cursor: pointer;
+}
+
+/* Button Styles */
+.colorButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  /* background-color: #007bff;  */
+}
+/* .colorButton:hover {
+  color: #f84464;
+} */
+.blue{
+  background: #f84464;
+  color: white;
+}
+
+
+.container-timing{
+  margin: 12px 110px;
+  background: white;
+}
+.info-border{
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.hall-info{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+.timing-box{
+    padding: 8px 26px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.green-dot{
+  color: #4abd5d;
+}
+.red-dot{
+  color: #f60;
+}
+.LAN{
+    border: 1px solid;
+    padding: 0px 5px;
+    /* font-size: 8px; */
+    font-weight: 700;
+}
+.timing-box-green{
+  border: 1px solid #4abd5d;
+}
+.timing-box-red{
+  border: 1px solid #f60 ;
+}
+.timing-box-green:hover{
+  background:  #4abd5d;
+  color: white;
+}
+.timing-box-red:hover{
+  background:  #f60;
+  color: white;
+}
+
+
+
+/* media query  */
+
+@media only screen and (max-width:991px){
+    .nav-container{
+        margin:0px 20px;
+    } 
+    .logo{
+        display: none;
+    }
+    .index-section-3 {
+        padding: 20px 20px;
+    }
+    .index-section-4{
+        padding: 20px 20px 20px 36px;
+    }
+    .is-4-cards{
+        flex-wrap: wrap;
+    }
+    .location-1{
+      display: none !important;
+    }
+    .cities{
+      overflow-y: scroll;
+    }
+    .cities-ul{
+      overflow-y: scroll;
+    }
+    .location1{
+      display: none;
+    }
+    .container-timing{
+      margin: 12px 10px;
+      background: white;
+    }
+  }
+  @media only screen and (min-width:991px){
+    .logo2{
+      display: none;
+    }
+    .location-logo{
+      display: none;
+    }
+    .location-2{
+      display: none !important;
+    }
+}
